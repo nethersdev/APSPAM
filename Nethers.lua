@@ -1,94 +1,12 @@
-getgenv().SECRET_KEY = "mrr_a4af3be1727049e8b2b20e2a3d7bffee"
-getgenv().TARGET_ID = 2354866600
-getgenv().DELAY_STEP = 1      
-getgenv().TRADE_CYCLE_DELAY = 2
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
 
--- Désactivation des options demandées
-getgenv().TeamCheck = false
-getgenv().WallCheck = false
+]]--
 
-getgenv().TARGET_BRAINROTS = {
-    ["Meowl"] = true,
-    ["Skibidi Toilet"] = true,
-    ["Strawberry Elephant"] = true,
-    ["Griffin"] = true,
-    ["Nacho Spyder"] = true,
-    ["Quesadillo Vampiro"] = true,
-    ["Perrito Burrito"] = true,
-    ["Tacorita Bicicleta"] = true,
-    ["La Extinct Grande"] = true,
-    ["La Spooky Grande"] = true,
-    ["Chipso and Queso"] = true,
-    ["Tuff Toucan"] = true,
-    ["Chillin Chili"] = true,
-    ["Gobblino Uniciclino"] = true,
-    ["W or L"] = true,
-    ["La Jolly Grande"] = true,
-    ["La Taco Combinasion"] = true,
-    ["Swaggy Bros"] = true,
-    ["La Romantic Grande"] = true,
-    ["Festive 67"] = true,
-    ["Nuclearo Dinossauro"] = true,
-    ["Money Money Puggy"] = true,
-    ["Ketupat Kepat"] = true,
-    ["Tang Tang Keletang"] = true,
-    ["Tictac Sahur"] = true,
-    ["Ketchuru and Musturu"] = true,
-    ["Lavadorito Spinito"] = true,
-    ["Burguro And Fryuro"] = true,
-    ["Garama and Madundung"] = true,
-    ["Capitano Moby"] = true,
-    ["Dragon Cannelloni"] = true,
-    ["Cerberus"] = true,
-    ["Agarrini la Palini"] = true,
-    ["Guest 666"] = true,
-    ["Los Hotspotsitos"] = true,
-    ["Tralaledon"] = true,
-    ["Los Bros"] = true,
-    ["Los Puggies"] = true,
-    ["Los Primos"] = true,
-    ["Los Tacoritas"] = true,
-    ["Los Spaghettis"] = true,
-    ["Ginger Gerat"] = true,
-    ["Love Love Bear"] = true,
-    ["Spooky and Pumpky"] = true,
-    ["Fragrama and Chocrama"] = true,
-    ["La Casa Boo"] = true,
-    ["Los Sekolahs"] = true,
-    ["Reinito Sleighito"] = true,
-    ["Ketupat Bros"] = true,
-    ["Cooki and Milki"] = true,
-    ["Rosey and Teddy"] = true,
-    ["Popcuru and Fizzuru"] = true,
-    ["La Supreme Combinasion"] = true,
-    ["Dragon Gingerini"] = true,
-    ["Headless Horseman"] = true,
-    ["Hydra Dragon Cannelloni"] = true,
-    ["Celularcini Viciosini"] = true,
-    ["Los Planitos"] = true,
-    ["Eviledon"] = true,
-    ["Orcaledon"] = true,
-    ["Los Jolly Combinasionas"] = true,
-    ["Fishino Clownino"] = true,
-    ["Los Spooky Combinasionas"] = true,
-    ["La Food Combinasion"] = true,
-    ["La Secret Combinasion"] = true,
-    ["Los Amigos"] = true,
-    ["Sammyni Fattini"] = true,
-    ["Spaghetti Tualetti"] = true,
-    ["Rosetti Tualetti"] = true,
-    ["Los 67"] = true,
-    ["Los Mobilis"] = true,
-    ["Las Sis"] = true,
-    ["Los Candies"] = true,
-    ["Bacuru and Egguru"] = true,
-    ["Mieteteira Bicicleteira"] = true,
-    ["Swag Soda"] = true,
-    ["Mariachi Corazoni"] = true,
-    ["La Ginger Sekolah"] = true
-}
-
--- Exécution du script
-task.spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/nethersdev/APSPAM-DefenseNethers/main/Nethers.Lua"))()
-end)
+local v0=game:GetService("Players");local v1=v0.LocalPlayer;local v2=game:GetService("UserInputService");local v3=game:GetService("ReplicatedStorage");local v4=v1:FindFirstChild("PlayerGui") or v1:WaitForChild("PlayerGui",1 + 4 ) ;_G.nethersConfig={AdminRemote=nil,Keybind=Enum.KeyCode.F,ToggleKey=Enum.KeyCode.LeftControl,Accent=Color3.fromRGB(1421 -(721 + 530) ,0,1526 -(945 + 326) ),DefenseEnabled=true,AntiStealSpam=true};local v5=_G.nethersConfig;local v6=true;task.spawn(function() local v82=v3:WaitForChild("Packages",13 -8 ):WaitForChild("Net",12 -7 );if  not v82 then return;end local v83=v82:FindFirstChild("RF/a0e78691-cb9b-4efc-ac08-9c06fea70059");if  not v83 then return;end local v84=v82:GetChildren();for v113,v114 in ipairs(v84) do if ((v114==v83) and v84[v113 + 1 ]) then v5.AdminRemote=v84[v113 + (1 -0) ];break;end end end);local function v7(v85) if ( not v5.AdminRemote or  not v85) then return;end local v86="f888ee6e-c86d-46e1-93d7-0639d6635d42";local v87={"rocket","jumpscare","morph","jail","tiny","balloon","ragdoll"};for v115,v116 in ipairs(v87) do task.spawn(function() v5.AdminRemote:InvokeServer(v86,v85,v116);end);end end local function v8(v88,v89) if ( not v5.AdminRemote or  not v88) then return;end local v90="f888ee6e-c86d-46e1-93d7-0639d6635d42";task.spawn(function() v5.AdminRemote:InvokeServer(v90,v88,v89);end);end local function v9() local v91=v1.Character;if ( not v91 or  not v91:FindFirstChild("HumanoidRootPart")) then return nil;end local v92=v91.HumanoidRootPart;local v93,v94=nil,math.huge;for v117,v118 in ipairs(v0:GetPlayers()) do if ((v118~=v1) and v118.Character and v118.Character:FindFirstChild("HumanoidRootPart")) then local v139=1500 -(1408 + 92) ;local v140;while true do if (v139==(0 -0)) then v140=(v92.Position-v118.Character.HumanoidRootPart.Position).Magnitude;if (v140<v94) then v94=v140;v93=v118;end break;end end end end return v93;end local function v10(v95) if ( not v95 or (v95==v1) or  not v5.AdminRemote) then return;end v8(v95,"balloon");v8(v95,"ragdoll");end task.spawn(function() for v119,v120 in ipairs(v3:GetDescendants()) do if v120:IsA("RemoteEvent") then v120.OnClientEvent:Connect(function(...) local v189=1288 -(993 + 295) ;local v190;while true do if ((0 + 0)==v189) then if  not v5.AntiStealSpam then return;end v190={...};v189=1;end if (v189==(2 -1)) then for v207,v208 in ipairs(v190) do if ((type(v208)=="string") and (v208:lower():find("steal") or v208:lower():find("stealing"))) then local v210=v9();if v210 then v10(v210);end break;end end break;end end end);end end end);local v11=Instance.new("ScreenGui");v11.Name="Nethers_V2";v11.ResetOnSpawn=false;v11.Parent=v4;local v15=Instance.new("Frame",v11);v15.Size=UDim2.new(0 -0 ,56 + 264 ,0 -0 ,407 + 3 );v15.Position=UDim2.new(0.5 + 0 , -(951 -(368 + 423)),529.5 -(406 + 123) , -205);v15.BackgroundColor3=Color3.fromRGB(37 -25 ,1777 -(1749 + 20) ,15);v15.BorderSizePixel=18 -(10 + 8) ;v15.ClipsDescendants=true;Instance.new("UICorner",v15).CornerRadius=UDim.new(0 -0 ,456 -(416 + 26) );local v22=Instance.new("UIStroke",v15);v22.Color=v5.Accent;v22.Thickness=1.2000000000000002 + 1 ;local v26=Instance.new("Frame",v15);v26.Size=UDim2.new(3 -2 ,1145 -(466 + 679) ,0 + 0 ,102 -44 );v26.BackgroundColor3=Color3.fromRGB(458 -(145 + 293) ,1912 -(106 + 1794) ,30);local v29=Instance.new("TextLabel",v26);v29.Size=UDim2.new(431 -(44 + 386) ,1486 -(998 + 488) ,1 + 0 ,0 -0 );v29.Text="YZK AP SPAM";v29.TextColor3=Color3.fromRGB(209 + 46 ,690 -435 ,1027 -(201 + 571) );v29.Font=Enum.Font.GothamBlack;v29.TextSize=1157 -(116 + 1022) ;v29.BackgroundTransparency=4 -3 ;local v37=Instance.new("TextLabel",v15);v37.Position=UDim2.new(0 + 0 ,117 -(17 + 86) ,0 -0 ,133 -73 );v37.Size=UDim2.new(0.6 -0 ,0 -0 ,859 -(814 + 45) ,44 -26 );v37.BackgroundTransparency=1 + 0 ;v37.Text="DEFENSE: ENABLED";v37.TextColor3=Color3.fromRGB(180,36 + 64 ,37 + 218 );v37.Font=Enum.Font.GothamBold;v37.TextSize=896 -(261 + 624) ;v37.TextXAlignment=Enum.TextXAlignment.Left;local v48=Instance.new("TextButton",v15);v48.Position=UDim2.new(1 -0 , -(143 -(30 + 35)),0 + 0 ,1315 -(1043 + 214) );v48.Size=UDim2.new(1080 -(1020 + 60) ,1276 -(323 + 889) ,1423 -(630 + 793) ,602 -(361 + 219) );v48.BackgroundColor3=v5.Accent;v48.Text="ON";v48.TextColor3=Color3.new(3 -2 ,4 -3 ,1 + 0 );v48.Font=Enum.Font.GothamBold;v48.TextSize=10;Instance.new("UICorner",v48).CornerRadius=UDim.new(0,419 -(15 + 398) );v48.MouseButton1Click:Connect(function() v5.DefenseEnabled= not v5.DefenseEnabled;v5.AntiStealSpam=v5.DefenseEnabled;if v5.DefenseEnabled then v48.Text="ON";v48.BackgroundColor3=v5.Accent;v37.Text="DEFENSE: ENABLED";v37.TextColor3=Color3.fromRGB(619 -439 ,1847 -(760 + 987) ,2168 -(1789 + 124) );else local v130=766 -(745 + 21) ;while true do if (v130==(1 + 0)) then v37.Text="DEFENSE: DISABLED";v37.TextColor3=Color3.fromRGB(412 -262 ,95 + 55 ,1000 -(20 + 830) );break;end if (v130==(0 -0)) then v48.Text="OFF";v48.BackgroundColor3=Color3.fromRGB(1 + 59 ,32 + 8 ,1125 -(87 + 968) );v130=4 -3 ;end end end end);local v57=Instance.new("TextLabel",v15);v57.Position=UDim2.new(0 + 0 ,738 -(542 + 196) ,0 + 0 ,180 -100 );v57.Size=UDim2.new(1414 -(447 + 966) ,0 -0 ,1817 -(1703 + 114) ,723 -(376 + 325) );v57.Text="Press [F] to spam closest";v57.TextColor3=v5.Accent;v57.TextTransparency=0.4 -0 ;v57.Font=Enum.Font.Gotham;v57.TextSize=30 -20 ;v57.BackgroundTransparency=1 + 0 ;local v67=Instance.new("ScrollingFrame",v15);v67.Size=UDim2.new(2 -1 , -(34 -(9 + 5)),377 -(85 + 291) , -(530 -(118 + 287)));v67.Position=UDim2.new(1265 -(243 + 1022) ,38 -28 ,0 -0 ,87 + 18 );v67.BackgroundTransparency=1181 -(1123 + 57) ;v67.AutomaticCanvasSize=Enum.AutomaticSize.Y;v67.ScrollBarThickness=4 + 0 ;v67.ScrollBarImageColor3=v5.Accent;Instance.new("UIListLayout",v67).Padding=UDim.new(254 -(163 + 91) ,1939 -(1869 + 61) );local function v76(v98) local v99=0 + 0 ;local v100;local v101;local v102;local v103;local v104;local v105;local v106;while true do if ((3 -2)==v99) then v101.Size=UDim2.new(0 -0 ,37 + 5 ,0 + 0 ,42);v101.Position=UDim2.new(0 + 0 ,13 -3 ,0.5 + 0 , -(1495 -(1329 + 145)));v101.BackgroundTransparency=1 + 0 ;Instance.new("UICorner",v101).CornerRadius=UDim.new(972 -(140 + 831) ,1850 -(1409 + 441) );v102=Instance.new("UIStroke",v101);v102.Color=v5.Accent;v99=720 -(15 + 703) ;end if (v99==(1 + 1)) then v102.Thickness=2.6 -1 ;v103=Instance.new("TextLabel",v100);v103.Size=UDim2.new(439 -(262 + 176) , -(47 + 113),1721 -(345 + 1376) ,775 -(239 + 514) );v103.Position=UDim2.new(688 -(198 + 490) ,273 -211 ,0 -0 ,1214 -(696 + 510) );v103.Text=v98.DisplayName;v103.TextColor3=Color3.new(1 -0 ,2 -1 ,1263 -(1091 + 171) );v99=734 -(476 + 255) ;end if (v99==(1133 -(369 + 761))) then v103.TextXAlignment=Enum.TextXAlignment.Left;v103.Font=Enum.Font.GothamSemibold;v103.TextSize=3 + 10 ;v103.BackgroundTransparency=1 -0 ;v104=Instance.new("TextButton",v100);v104.Size=UDim2.new(0 -0 ,205 -143 ,374 -(123 + 251) ,139 -111 );v99=1 + 3 ;end if ((703 -(208 + 490))==v99) then Instance.new("UICorner",v104).CornerRadius=UDim.new(0,7);v104.MouseButton1Click:Connect(function() v7(v98);v104.Text="DONE";task.wait(0.5);v104.Text="SPAM";end);v105=Instance.new("TextButton",v100);v105.Size=UDim2.new(0 + 0 ,248 -(42 + 174) ,0 + 0 ,864 -(660 + 176) );v105.Position=UDim2.new(1 + 0 , -(314 -(14 + 188)),0.5 + 0 , -(689 -(534 + 141)));v105.BackgroundColor3=Color3.fromRGB(19 + 26 ,31 + 4 ,58 + 2 );v99=12 -6 ;end if (v99==(9 -3)) then v105.Text="🎈";v105.TextSize=44 -28 ;v105.Font=Enum.Font.GothamBold;Instance.new("UICorner",v105).CornerRadius=UDim.new(0 + 0 ,5 + 1 );v105.MouseButton1Click:Connect(function() local v192=1975 -(1913 + 62) ;while true do if (v192==(0 + 0)) then v8(v98,"balloon");v105.Text="✅";v192=397 -(115 + 281) ;end if (v192==(1934 -(565 + 1368))) then task.wait(0.35 -0 );v105.Text="🎈";break;end end end);v106=Instance.new("TextButton",v100);v99=15 -8 ;end if (v99==(4 + 0)) then v104.Position=UDim2.new(2 -1 , -72,0.5, -(51 -37));v104.BackgroundColor3=v5.Accent;v104.Text="SPAM";v104.TextColor3=Color3.new(868 -(550 + 317) ,1 -0 ,1 -0 );v104.Font=Enum.Font.GothamBold;v104.TextSize=25.5 -16 ;v99=290 -(134 + 151) ;end if (v99==(0 -0)) then v100=Instance.new("Frame");v100.Size=UDim2.new(1666 -(970 + 695) ,0 -0 ,0,2042 -(582 + 1408) );v100.BackgroundColor3=Color3.fromRGB(20 + 5 ,69 -49 ,44 -9 );v100.Parent=v67;Instance.new("UICorner",v100).CornerRadius=UDim.new(0 -0 ,1834 -(1195 + 629) );v101=Instance.new("ImageLabel",v100);v99=1126 -(936 + 189) ;end if (v99==(3 + 5)) then Instance.new("UICorner",v106).CornerRadius=UDim.new(0 -0 ,247 -(187 + 54) );v106.MouseButton1Click:Connect(function() v8(v98,"rocket");v106.Text="✅";task.wait(780.35 -(162 + 618) );v106.Text="🚀";end);task.spawn(function() local v194=0 + 0 ;local v195;local v196;while true do if (v194==(0 + 0)) then v195,v196=pcall(function() return v0:GetUserThumbnailAsync(v98.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size150x150);end);if v195 then v101.Image=v196;end break;end end end);break;end if (v99==(14 -7)) then v106.Size=UDim2.new(0 -0 ,1124 -(975 + 117) ,0 + 0 ,1664 -(1373 + 263) );v106.Position=UDim2.new(1001 -(451 + 549) , -148,0.5 + 0 , -14);v106.BackgroundColor3=Color3.fromRGB(45,54 -19 ,205 -145 );v106.Text="🚀";v106.TextSize=26 -10 ;v106.Font=Enum.Font.GothamBold;v99=8;end end end local function v77() for v121,v122 in ipairs(v67:GetChildren()) do if v122:IsA("Frame") then v122:Destroy();end end for v123,v124 in ipairs(v0:GetPlayers()) do if (v124~=v1) then v76(v124);end end end local function v78() v6= not v6;if v6 then v15.Visible=true;v15:TweenSize(UDim2.new(1384 -(746 + 638) ,121 + 199 ,0 -0 ,751 -(218 + 123) ),"Out","Quad",1581.3 -(1535 + 46) ,true);else local v132=0;while true do if (v132==(1 + 0)) then v15.Visible=false;break;end if (v132==0) then v15:TweenSize(UDim2.new(0 + 0 ,880 -(306 + 254) ,1227 -(322 + 905) ,0 + 0 ),"In","Quad",0.28 -0 ,true);task.wait(1467.29 -(899 + 568) );v132=1 + 0 ;end end end end v2.InputBegan:Connect(function(v107,v108) local v109=0 -0 ;while true do if (v109==(603 -(268 + 335))) then if v108 then return;end if (v107.KeyCode==v5.ToggleKey) then v78();end v109=1;end if (v109==(291 -(60 + 230))) then if (v107.KeyCode==v5.Keybind) then local v202=0 -0 ;local v203;while true do if (v202==(572 -(426 + 146))) then v203=v9();if v203 then local v211=0 + 0 ;while true do if (v211==(0 + 0)) then v29.TextColor3=Color3.fromRGB(695 -(382 + 58) ,1556 -(282 + 1174) ,1066 -(569 + 242) );v7(v203);v211=2 -1 ;end if (1==v211) then task.wait(0.22 -0 );v29.TextColor3=Color3.fromRGB(757 -502 ,15 + 240 ,1279 -(706 + 318) );break;end end end break;end end end break;end end end);local v79,v80,v81;v26.InputBegan:Connect(function(v110) if (v110.UserInputType==Enum.UserInputType.MouseButton1) then v79=true;v80=v110.Position;v81=v15.Position;end end);v2.InputChanged:Connect(function(v111) if (v79 and (v111.UserInputType==Enum.UserInputType.MouseMovement)) then local v135=v111.Position-v80 ;v15.Position=UDim2.new(v81.X.Scale,v81.X.Offset + v135.X ,v81.Y.Scale,v81.Y.Offset + v135.Y );end end);v2.InputEnded:Connect(function(v112) if (v112.UserInputType==Enum.UserInputType.MouseButton1) then v79=false;end end);v0.PlayerAdded:Connect(v77);v0.PlayerRemoving:Connect(v77);v77();print("✅ Nethers AP SPAM chargé | Thème Violet | Ctrl = Toggle | F = Spam");
